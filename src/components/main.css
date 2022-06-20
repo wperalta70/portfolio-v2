@@ -1,0 +1,43 @@
+/* Heading highlight */
+.highlight {
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  background-color: var(--chakra-colors-primary);
+  height: 10px;
+  width: 100px;
+  bottom: -20px;
+  left: 0;
+  box-shadow: var(--chakra-shadows-sm-secondary);
+}
+
+@media (max-width: 768px) {
+  .highlight::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Heading highlight */
+
+/* Link classes */
+.nav-active {
+  position: relative;
+}
+.nav-active::after {
+  content: "";
+  position: absolute;
+  background-color: var(--chakra-colors-primary);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  transform: translateY(calc(-100% + 10px));
+  box-shadow: var(--chakra-shadows-sm-primary);
+}
+/* Link classes */
