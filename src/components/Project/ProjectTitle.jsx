@@ -18,7 +18,8 @@ const ProjectTitle = ({ title, linkDemo }) => {
         h: '5px',
         w: '30px',
         transform: 'translateY(-50%)',
-        bg: 'primary'
+        bg: 'primary',
+        shadow: 'sm.primary'
       }}
       _hover={{
         color: 'font.light',

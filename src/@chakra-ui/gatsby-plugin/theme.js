@@ -39,7 +39,11 @@ const theme = {
     'text.lg': '1.75rem',
     'text.md': '1.563rem',
     'text.sm': '1.2rem',
-    'text.xs': '1.1rem'
+    'text.xs': '1.125rem'
+  },
+  sizes: {
+    'icon.md': '3.125rem',
+    'icon.sm': '1.875rem'
   },
   shadows: {
     'lg.primary': '0px 0px 60px rgba(255, 175, 41, 0.6)',

@@ -9,7 +9,7 @@ const LandingPage = () => {
   return (
     <Box
       bg='background.light'
-      h='100vh'
+      minH='100vh'
       p={{ base: 0, md: '80px 100px' }}
       display='flex'
       justifyContent='flex-start'
@@ -19,7 +19,6 @@ const LandingPage = () => {
       position='relative'
       zIndex={1}
       _before={{
-        display: { base: 'block', md: 'none' },
         content: '""',
         position: 'absolute',
         bgImage: devImage,
@@ -29,8 +28,7 @@ const LandingPage = () => {
         w: { base: 'calc(100%)', md: 'calc(100% - 200px)' },
         h: { base: 'calc(100%)', md: 'calc(100% - 80px)' },
         opacity: { base: 0.10, md: 1 },
-        zIndex: -1,
-        margin: '100px'
+        zIndex: -1
       }}
     >
       <Box

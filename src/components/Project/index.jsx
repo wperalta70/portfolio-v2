@@ -9,7 +9,6 @@ import ProjectPreview from '@components/project/ProjectPreview';
 const Project = ({ title, description, tags, image, linkRepo, linkDemo }) => {
   return (
     <Box
-      marginTop='10px'
       display='flex'
       w='100%'
       justifyContent='space-between'
@@ -17,16 +16,18 @@ const Project = ({ title, description, tags, image, linkRepo, linkDemo }) => {
       zIndex={1}
       position='relative'
       _before={{
+        display: { base: 'block', md: 'none' },
         content: '""',
         position: 'absolute',
         bgImage: image,
-        bgSize: { base: 'cover!important', md: '0' },
+        bgSize: 'cover',
         bgPosition: 'center',
         bgRepeat: 'no-repeat',
-        w: { base: '100%', md: '0' },
-        h: { base: '100%', md: '0' },
-        opacity: { base: 0.2, md: 0 },
-        zIndex: -1
+        w: '100%',
+        h: '100%',
+        opacity: 0.2,
+        zIndex: -1,
+        padding: '100px'
       }}
     >
       <Box
