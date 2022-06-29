@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from '@chakra-ui/react';
 
-const ProjectButton = ({ primary = false, label, href }) => {
+const ProjectButton = ({ primary = false, label, href, ...props }) => {
   return (
     <Link
       href={href}
@@ -18,11 +18,11 @@ const ProjectButton = ({ primary = false, label, href }) => {
         color: primary ? 'black' : 'font.light'
       }}
       textAlign='center'
+      {...props}
     >
       {label}
     </Link>
   );
 };
 
-export default ProjectButton
-;
+export default ProjectButton;

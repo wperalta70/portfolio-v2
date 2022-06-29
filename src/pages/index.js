@@ -5,6 +5,8 @@ import '@components/main.css';
 import LandingPage from './LandingPage';
 import ProjectsSection from './ProjectsSection';
 import TechnologiesSection from './TechnologiesSection';
+import ContactSection from './ContactSection';
+import Footer from '@components/Footer';
 
 const IndexPage = () => {
   return (
@@ -28,7 +30,17 @@ const IndexPage = () => {
 
       </Box>
 
-      <Box bg='background.light' minH='100vh' />
+      <Box
+        display='flex'
+        alignItems='center'
+        justifyContent='space-between'
+        flexDir='column'
+        bg='background.light'
+      >
+        <ContactSection />
+
+        <Footer />
+      </Box>
     </>
   );
 };

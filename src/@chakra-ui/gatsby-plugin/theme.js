@@ -36,6 +36,7 @@ const theme = {
     'heading.xl': '5.625rem',
     'heading.lg': '4.375rem',
     'heading.sm': '3.125rem',
+    'heading.xs': '2.5rem',
     'text.lg': '1.75rem',
     'text.md': '1.563rem',
     'text.sm': '1.2rem',
