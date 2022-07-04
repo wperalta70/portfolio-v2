@@ -3,7 +3,7 @@ import { Box, Heading, Link, Text } from '@chakra-ui/react';
 import Divider from '@components/Divider';
 import SocialButtons from '@components/SocialButtons/SocialButtons';
 import LogoSolid from '@components/LogoSolid';
-import devImage from '@images/dev-shadow.png';
+import { withPrefix } from 'gatsby';
 
 const LandingPage = () => {
   return (
@@ -21,7 +21,7 @@ const LandingPage = () => {
       _before={{
         content: '""',
         position: 'absolute',
-        bgImage: devImage,
+        bgImage: withPrefix('./images/dev-shadow.png'),
         bgSize: { base: 'cover', md: '1000px 1000px' },
         bgPosition: { base: 'calc(50% - 30px) 50%', md: 'calc(50% - 180px) calc(100% + 150px)' },
         bgRepeat: 'no-repeat',
