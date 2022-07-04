@@ -55,7 +55,7 @@ const LandingPage = () => {
           <br />
           Waldemar.
         </Heading>
-        <SocialButtons marginTop={{ base: '40px', md: '80px' }} />
+        <SocialButtons marginTop={{ base: '20px', md: '80px' }} />
       </Box>
 
       <Box
@@ -66,11 +66,12 @@ const LandingPage = () => {
         marginTop={{ base: 0, md: '100px' }}
       >
         <Box
-          fontSize={{ base: 'text.sm', md: 'text.lg' }}
+          fontSize={{ base: 'text.xs', md: 'text.lg' }}
           display='flex'
           flexDir='row'
+          flexWrap={{ base: 'wrap', md: 'nowrap' }}
           justifyContent='space-between'
-          gap='25px'
+          gap='10px'
         >
           <Link
             href='#'
@@ -81,6 +82,7 @@ const LandingPage = () => {
               color: 'font.light',
               transform: 'scale(1.025)'
             }}
+            whiteSpace='nowrap'
           >
             About me
           </Link>
@@ -136,6 +138,7 @@ const LandingPage = () => {
           </Text>
           <Text
             w='100%'
+            paddingBottom='10px'
           >
             I enjoy creating things for the internet - from full stack apps, to tools that help me work more efficiently, to building things just for fun.
           </Text>
