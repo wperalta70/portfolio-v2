@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    siteUrl: 'https://www.waldemarperalta.com'
   },
-  plugins: ["@chakra-ui/gatsby-plugin"],
-}
+  plugins: ['@chakra-ui/gatsby-plugin']
+};
