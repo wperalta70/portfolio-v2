@@ -7,6 +7,8 @@ const LogoSolid = ({ w, h }) => {
       w={w} h={h} viewBox='0 0 71 82' sx={{
         filter: 'drop-shadow(0px 4px 60px rgba(255, 175, 41, 0.6))'
       }}
+      display='block'
+      width='100%'
     >
       <svg fill='none' xmlns='http://www.w3.org/2000/svg'>
         <path d='M35.5 0L71 20.5V61.5L35.5 82L0 61.5V20.5L35.5 0Z' fill='#FFAF29' />
