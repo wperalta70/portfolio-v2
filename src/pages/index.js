@@ -20,7 +20,7 @@ const IndexPage = () => {
         alignItems='center'
         fontFamily='poppins'
         fontWeight={900}
-        padding={{ base: '20px', md: '75px 0' }}
+        padding={{ base: '20px', md: '20px 50px', lg: '75px 0' }}
         gap='50px'
         overflow='hidden'
       >

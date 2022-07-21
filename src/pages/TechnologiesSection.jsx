@@ -8,8 +8,8 @@ const TechnologiesSection = () => {
     <Box
       display='flex'
       flexDir='column'
-      w={{ base: '100%', md: '1500px' }}
-      gap={{ base: '10px', md: '20px' }}
+      w={{ base: '100%', lg: '1500px' }}
+      gap={{ base: '10px', lg: '20px' }}
     >
       <Divider text='TECHNOLOGIES' centered />
 
@@ -17,7 +17,7 @@ const TechnologiesSection = () => {
         display='grid'
         gridTemplateColumns={{
           base: '1fr',
-          md: 'repeat(3, 1fr)'
+          lg: 'repeat(3, 1fr)'
         }}
         gridGap='20px'
       >

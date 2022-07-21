@@ -7,17 +7,17 @@ const Divider = ({ text, centered = false }) => {
       display='flex'
       justifyContent='center'
       alignItems='center'
-      color={{ base: 'font.dark', md: 'font.darker' }}
+      color={{ base: 'font.dark', lg: 'font.darker' }}
       w='100%'
       letterSpacing='0.2em'
-      fontSize={{ md: 'text.sm' }}
+      fontSize={{ lg: 'text.sm' }}
       _before={
         centered && {
           marginRight: '10px',
           content: '""',
           height: '2px',
           transform: 'translateY(-50%)',
-          bg: { base: 'font.dark', md: 'font.darker' },
+          bg: { base: 'font.dark', lg: 'font.darker' },
           flexGrow: 1
         }
       }
@@ -26,7 +26,7 @@ const Divider = ({ text, centered = false }) => {
         content: '""',
         height: '2px',
         transform: 'translateY(-50%)',
-        bg: { base: 'font.dark', md: 'font.darker' },
+        bg: { base: 'font.dark', lg: 'font.darker' },
         flexGrow: 1
       }}
     >

@@ -10,7 +10,7 @@ const ProjectsPage = () => {
       flexDir='column'
       justifyContent='flex-start'
       alignItems='center'
-      w={{ base: '100%', md: '1500px' }}
+      w={{ base: '100%', lg: '1500px' }}
       gap='10px'
     >
       <Divider text='PROJECTS' />

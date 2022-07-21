@@ -1,12 +1,12 @@
-import { Box, HStack, Link, Text, VStack } from '@chakra-ui/react';
+import { HStack, Link, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import Divider from '@components/Divider';
 
 const RightColumn = () => {
   return (
     <VStack
-      w={{ base: '100%', md: '500px' }}
-      p={{ base: '0 20px' }}
+      w={{ base: '100%', lg: '500px' }}
+      p={{ base: '0 20px', md: '0 100px', lg: 0 }}
       fontFamily='poppins'
       fontWeight={900}
       zIndex={2}
@@ -16,7 +16,7 @@ const RightColumn = () => {
       <HStack
         w='100%'
         fontSize={{ base: 'text.xs', md: 'text.lg' }}
-        flexWrap={{ base: 'wrap', md: 'nowrap' }}
+        flexWrap={{ base: 'wrap', lg: 'nowrap' }}
         justifyContent='space-between'
       >
         <Link
@@ -36,7 +36,7 @@ const RightColumn = () => {
         <Link
           href='#projects'
           textDecoration='none!important'
-          color={{ base: 'font.dark', md: 'font.darker' }}
+          color={{ base: 'font.dark', lg: 'font.darker' }}
           _hover={{
             color: 'font.light',
             transform: 'scale(1.025)'
@@ -48,7 +48,7 @@ const RightColumn = () => {
         <Link
           href='#technologies'
           textDecoration='none!important'
-          color={{ base: 'font.dark', md: 'font.darker' }}
+          color={{ base: 'font.dark', lg: 'font.darker' }}
           _hover={{
             color: 'font.light',
             transform: 'scale(1.025)'
@@ -58,9 +58,8 @@ const RightColumn = () => {
         </Link>
       </HStack>
 
-      <Box
-        display='flex'
-        flexDir='column'
+      <VStack
+        spacing={0}
         gap='10px'
         justifyContent='center'
         alignItems='center'
@@ -70,7 +69,7 @@ const RightColumn = () => {
         <Divider text='ABOUT ME' />
         <Text
           fontFamily='ubuntu'
-          fontSize={{ base: 'text.sm', md: 'text.md' }}
+          fontSize={{ base: 'text.sm', lg: 'text.sm' }}
           w='100%'
           color='font.light'
         >
@@ -83,11 +82,11 @@ const RightColumn = () => {
         </Text>
         <Text
           w='100%'
-          paddingBottom='10px'
+          paddingBottom={{ base: '10px', md: '30px', lg: '10px' }}
         >
           I enjoy creating things for the internet - from full stack apps, to tools that help me work more efficiently, to building things just for fun.
         </Text>
-      </Box>
+      </VStack>
     </VStack>
   );
 };

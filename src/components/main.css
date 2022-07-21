@@ -14,7 +14,7 @@
   box-shadow: var(--chakra-shadows-sm-secondary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .highlight::after {
     left: 50%;
     transform: translateX(-50%);
