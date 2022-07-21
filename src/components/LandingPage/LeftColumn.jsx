@@ -1,17 +1,19 @@
-import { Box, Heading } from '@chakra-ui/react';
+import { Heading, VStack } from '@chakra-ui/react';
 import React from 'react';
 import SocialButtons from '@components/SocialButtons';
 
 const LeftColumn = () => {
   return (
-    <Box
+    <VStack
       zIndex={2}
-      w='100%'
+      alignItems={{ base: 'center', md: 'flex-start' }}
+      textAlign={{ base: 'center', md: 'left' }}
+      gap='50px'
+      spacing={0}
     >
       <Heading
         fontSize={{ base: 'heading.sm', md: 'heading.xl' }}
         minW='100%'
-        textAlign={{ base: 'center', md: 'left' }}
         fontFamily='poppins'
         fontWeight={900}
         color='font.light'
@@ -22,8 +24,9 @@ const LeftColumn = () => {
         <br />
         Waldemar.
       </Heading>
-      <SocialButtons marginTop={{ base: '20px', md: '80px' }} />
-    </Box>
+      {/* <SocialButtons marginTop={{ base: '20px', md: '80px' }} /> */}
+      <SocialButtons />
+    </VStack>
   );
 };
 
