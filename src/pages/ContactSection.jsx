@@ -10,24 +10,25 @@ const ContactSection = () => {
       flexDir='column'
       justifyContent='center'
       alignItems='center'
-      padding={{ base: '5rem 2rem', md: '5rem 0' }}
+      padding={{ base: '5rem 2rem', lg: '5rem 0' }}
       gap='1.3rem'
       maxW='35rem'
     >
       <LogoSolid
-        w={{ base: '50px', md: '70px' }}
-        h={{ base: '50px', md: '70px' }}
+        zIndex={3}
+        w={{ base: '50px', lg: '70px' }}
+        h={{ base: '50px', lg: '70px' }}
       />
       <Heading
         color='font.light'
         fontFamily='ubuntu'
-        fontSize={{ base: 'heading.xs', md: 'heading.lg' }}
+        fontSize={{ base: 'heading.xs', lg: 'heading.lg' }}
       >
         Get in touch
       </Heading>
       <Text
         color='font.dark'
-        fontSize={{ base: 'text.xs', md: 'text.md' }}
+        fontSize={{ base: 'text.xs', lg: 'text.sm' }}
         textAlign='center'
       >
         Thanks for visiting! If you have any questions or just want to have a chat, feel free to get in touch :)
@@ -37,8 +38,8 @@ const ContactSection = () => {
         href='https://www.linkedin.com/in/wperalta70'
         primary
         fontWeight={600}
-        p={{ base: '15px 50px', md: '15px 50px' }}
-        marginTop={{ base: '30px', md: '50px' }}
+        p={{ base: '15px 50px', lg: '15px 50px' }}
+        marginTop={{ base: '30px', lg: '50px' }}
       />
     </Box>
   );

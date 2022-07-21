@@ -12,11 +12,11 @@ const Project = ({ title, description, tags, image, linkRepo, linkDemo }) => {
       display='flex'
       w='100%'
       justifyContent='space-between'
-      gap={{ md: '60px' }}
+      gap={{ lg: '60px' }}
       zIndex={1}
       position='relative'
       _before={{
-        display: { base: 'block', md: 'none' },
+        display: { base: 'block', lg: 'none' },
         content: '""',
         position: 'absolute',
         bgImage: image,

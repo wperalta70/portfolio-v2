@@ -52,9 +52,9 @@ export default function Navbar () {
       >
         {/* Start of Hamburger icon for MobileNav */}
         <Flex
-          flex={{ base: 0, md: 'auto' }}
+          flex={{ base: 0, lg: 'auto' }}
           ml={{ base: -2 }}
-          display={{ base: 'flex', md: 'none' }}
+          display={{ base: 'flex', lg: 'none' }}
         >
           <IconButton
             onClick={onToggle}
@@ -69,10 +69,10 @@ export default function Navbar () {
 
         {/* Start of Desktop Nav */}
         {/* Left section of DesktopNav */}
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
+        <Flex flex={{ base: 1 }} justify={{ base: 'center', lg: 'start' }}>
           {/* Logo */}
           <Text
-            textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
+            textAlign={useBreakpointValue({ base: 'center', lg: 'left' })}
             fontFamily='heading'
             color={useColorModeValue('gray.800', 'white')}
           >
@@ -80,7 +80,7 @@ export default function Navbar () {
           </Text>
 
           {/* Nav items */}
-          <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
+          <Flex display={{ base: 'none', lg: 'flex' }} ml={10}>
             <DesktopNav />
           </Flex>
         </Flex>
@@ -88,7 +88,7 @@ export default function Navbar () {
         {/* Right section of Desktop Nav */}
         <Stack
           flex={0}
-          display={{ base: 'none', md: 'flex' }}
+          display={{ base: 'none', lg: 'flex' }}
           justify='flex-end'
           direction='row'
           spacing={6}
@@ -143,7 +143,7 @@ const MobileNav = () => {
     <Stack
       bg={useColorModeValue('white', 'gray.800')}
       p={4}
-      display={{ md: 'none' }}
+      display={{ lg: 'none' }}
     >
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />

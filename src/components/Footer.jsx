@@ -7,7 +7,7 @@ const Footer = () => {
     <Box
       color='font.dark'
       fontFamily='courierPrime'
-      fontSize={{ base: '0.8rem', md: '1rem' }}
+      fontSize={{ base: '0.8rem', lg: '1rem' }}
       margin='20px 0'
       transition='all 0.15s ease-in-out'
       _hover={{

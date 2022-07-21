@@ -8,7 +8,7 @@ const ProjectButton = ({ primary = false, label, href, ...props }) => {
       target='_blank'
       rel='noreferrer'
       bg={primary ? 'primary' : 'secondary'}
-      p={{ base: '15px 25px', md: '15px 30px' }}
+      p={{ base: '15px 25px', lg: '15px 30px' }}
       textDecoration='none!important'
       letterSpacing='0.2em'
       color={primary ? 'font.darkest' : 'font.dark'}

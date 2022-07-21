@@ -4,7 +4,7 @@ import { Box, Image, Link } from '@chakra-ui/react';
 const ProjectPreview = ({ linkDemo, image }) => {
   return (
     <Box
-      display={{ base: 'none', md: 'block' }}
+      display={{ base: 'none', lg: 'block' }}
       minW='800px'
       maxW='800px'
       minH='450px'
