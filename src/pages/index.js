@@ -22,6 +22,7 @@ const IndexPage = () => {
         fontWeight={900}
         padding={{ base: '20px', md: '75px 0' }}
         gap='50px'
+        overflow='hidden'
       >
 
         <ProjectsSection />

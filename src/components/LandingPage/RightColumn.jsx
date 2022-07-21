@@ -1,24 +1,23 @@
-import { Box, Link, Text } from '@chakra-ui/react';
+import { Box, HStack, Link, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 import Divider from '@components/Divider';
 
 const RightColumn = () => {
   return (
-    <Box
+    <VStack
       w={{ base: '100%', md: '500px' }}
-      p={{ base: 0, md: 0 }}
+      p={{ base: '0 20px' }}
       fontFamily='poppins'
       fontWeight={900}
       zIndex={2}
+      rowGap='50px'
+      spacing={0}
     >
-      <Box
+      <HStack
+        w='100%'
         fontSize={{ base: 'text.xs', md: 'text.lg' }}
-        display='flex'
-        flexDir='row'
         flexWrap={{ base: 'wrap', md: 'nowrap' }}
-        justifyContent={{ base: 'center', md: 'space-between' }}
-        gap={{ base: '20px', md: '10px' }}
-        marginTop={{ base: '15px', md: 0 }}
+        justifyContent='space-between'
       >
         <Link
           href='#'
@@ -57,7 +56,7 @@ const RightColumn = () => {
         >
           Technologies
         </Link>
-      </Box>
+      </HStack>
 
       <Box
         display='flex'
@@ -65,10 +64,8 @@ const RightColumn = () => {
         gap='10px'
         justifyContent='center'
         alignItems='center'
-        marginTop={{ base: '50px', md: '65px' }}
         fontFamily='poppins'
         color='font.dark'
-        padding={{ base: '0 20px', md: 0 }}
       >
         <Divider text='ABOUT ME' />
         <Text
@@ -91,7 +88,7 @@ const RightColumn = () => {
           I enjoy creating things for the internet - from full stack apps, to tools that help me work more efficiently, to building things just for fun.
         </Text>
       </Box>
-    </Box>
+    </VStack>
   );
 };
 

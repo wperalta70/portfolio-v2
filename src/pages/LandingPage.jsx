@@ -9,35 +9,35 @@ import RightColumn from '../components/LandingPage/RightColumn';
 const LandingPage = () => {
   return (
     <Box
-      id='main div'
       bg='background.light'
       h='100vh'
+      overflow={{ base: 'hidden', md: 'visible' }}
+      position='relative'
+      _before={{
+        content: '""',
+        position: 'absolute',
+        overflow: 'hidden',
+        bgImage: withPrefix('./images/dev.png'),
+        bgSize: { base: 'cover' },
+        bgPosition: { base: 'calc(50% - 125px)', md: 0 },
+        bgRepeat: 'no-repeat',
+        w: { base: '650px', md: 0 },
+        h: { base: '650px', md: 0 },
+        opacity: { base: 0.10, md: 0 },
+        zIndex: 2
+      }}
     >
       <HStack
-        id='HStack1'
         spacing={0}
         paddingTop={{ md: '3%' }}
         justifyContent={{ base: 'flex-start', md: 'center' }}
-        _before={{
-          content: '""',
-          position: 'absolute',
-          bgImage: withPrefix('./images/dev.png'),
-          bgSize: { base: 'cover' },
-          bgPosition: { base: 'calc(50% - 125px)', md: 0 },
-          bgRepeat: 'no-repeat',
-          w: { base: '650px', md: 0 },
-          h: { base: '650px', md: 0 },
-          opacity: { base: 0.10, md: 0 },
-          zIndex: 2
-        }}
       >
         <VStack
-          id='VStack 1'
-          spacing={0}
           width={{ base: '100%', md: '1500px' }}
           position='relative'
-          rowGap={{ base: 0, md: '30px' }}
           alignItems='flex-start'
+          spacing={0}
+          gap='30px'
         >
           <Image
             src={devIllustration}
@@ -45,22 +45,23 @@ const LandingPage = () => {
             h={{ base: null, md: '1000px' }}
             w={{ base: null, md: '1000px' }}
             position='absolute'
-            top='20px'
+            top='30px'
             left='50%'
             transform='translateX(calc(-50% - 125px))'
             display={{ base: 'none', md: 'block' }}
           />
-          <Box padding={{ base: '5%', md: 0 }} id='boxlogo'>
+          <Box padding={{ base: '5%', md: 0 }}>
             <LogoSolid
               w={{ base: '50px', md: '70px' }}
               h={{ base: '50px', md: '70px' }}
             />
           </Box>
           <HStack
-            id='testing123'
             w='100%'
-            justifyContent='space-between'
+            justifyContent={{ base: 'center', md: 'space-between' }}
             flexWrap={{ base: 'wrap', md: 'nowrap' }}
+            spacing={0}
+            rowGap={{ base: '30px', md: 0 }}
           >
             <LeftColumn />
             <RightColumn />
