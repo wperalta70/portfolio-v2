@@ -10,8 +10,8 @@ const LandingPage = () => {
   return (
     <Box
       bg='background.light'
-      h='100vh'
-      overflow={{ base: 'hidden', md: 'visible' }}
+      minH='100vh'
+      overflow={{ base: 'hidden', lg: 'visible' }}
       position='relative'
       _before={{
         content: '""',
@@ -19,21 +19,21 @@ const LandingPage = () => {
         overflow: 'hidden',
         bgImage: withPrefix('./images/dev.png'),
         bgSize: { base: 'cover' },
-        bgPosition: { base: 'calc(50% - 125px)', md: 0 },
+        bgPosition: { base: 'calc(50% - 125px)', md: 'calc(50%)', lg: 0 },
         bgRepeat: 'no-repeat',
-        w: { base: '650px', md: 0 },
-        h: { base: '650px', md: 0 },
-        opacity: { base: 0.10, md: 0 },
+        w: { base: '650px', md: '750px', lg: 0 },
+        h: { base: '650px', md: '750px', lg: 0 },
+        opacity: { base: 0.10, lg: 0 },
         zIndex: 2
       }}
     >
       <HStack
         spacing={0}
-        paddingTop={{ md: '3%' }}
-        justifyContent={{ base: 'flex-start', md: 'center' }}
+        paddingTop={{ lg: '50px' }}
+        justifyContent={{ base: 'flex-start', lg: 'center' }}
       >
         <VStack
-          width={{ base: '100%', md: '1500px' }}
+          width={{ base: '100%', lg: '1500px' }}
           position='relative'
           alignItems='flex-start'
           spacing={0}
@@ -42,26 +42,31 @@ const LandingPage = () => {
           <Image
             src={devIllustration}
             zIndex={1}
-            h={{ base: null, md: '1000px' }}
-            w={{ base: null, md: '1000px' }}
+            h={{ base: null, lg: '1000px' }}
+            w={{ base: null, lg: '1000px' }}
             position='absolute'
             top='30px'
             left='50%'
             transform='translateX(calc(-50% - 125px))'
-            display={{ base: 'none', md: 'block' }}
+            display={{ base: 'none', lg: 'block' }}
           />
-          <Box padding={{ base: '5%', md: 0 }}>
+          <HStack
+            padding={{ base: '30px 20px 0 20px', lg: 0 }}
+            w='100%'
+            justifyContent={{ sm: 'center', lg: 'flex-start' }}
+            mb='500px'
+          >
             <LogoSolid
               w={{ base: '50px', md: '70px' }}
               h={{ base: '50px', md: '70px' }}
             />
-          </Box>
+          </HStack>
           <HStack
             w='100%'
-            justifyContent={{ base: 'center', md: 'space-between' }}
-            flexWrap={{ base: 'wrap', md: 'nowrap' }}
+            justifyContent={{ base: 'center', lg: 'space-between' }}
+            flexWrap={{ base: 'wrap', lg: 'nowrap' }}
             spacing={0}
-            rowGap={{ base: '30px', md: 0 }}
+            rowGap={{ base: '30px', lg: 0 }}
           >
             <LeftColumn />
             <RightColumn />

@@ -6,14 +6,13 @@ const LeftColumn = () => {
   return (
     <VStack
       zIndex={2}
-      alignItems={{ base: 'center', md: 'flex-start' }}
-      textAlign={{ base: 'center', md: 'left' }}
+      alignItems={{ base: 'center', lg: 'flex-start' }}
+      textAlign={{ base: 'center', lg: 'left' }}
       gap='50px'
       spacing={0}
     >
       <Heading
-        fontSize={{ base: 'heading.sm', md: 'heading.xl' }}
-        minW='100%'
+        fontSize={{ base: 'heading.sm', md: 'heading.lg', lg: 'heading.xl' }}
         fontFamily='poppins'
         fontWeight={900}
         color='font.light'
@@ -24,7 +23,6 @@ const LeftColumn = () => {
         <br />
         Waldemar.
       </Heading>
-      {/* <SocialButtons marginTop={{ base: '20px', md: '80px' }} /> */}
       <SocialButtons />
     </VStack>
   );

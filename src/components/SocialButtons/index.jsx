@@ -10,8 +10,8 @@ const SocialButtons = ({ ...props }) => {
     <Box
       {...props}
       display='flex'
-      alignItems={{ base: 'center', md: 'flex-start' }}
-      justifyContent={{ base: 'center', md: 'flex-start' }}
+      alignItems={{ base: 'center', lg: 'flex-start' }}
+      justifyContent={{ base: 'center', lg: 'flex-start' }}
       gap='30px'
     >
       {/* Github Link */}
